@@ -24,9 +24,13 @@ une entité applicative (classe, fonction, module ...) doit être fermée à la 
 
 une instance de type T doit pouvoir être remplacée par une instance de type G, tel que G sous-type de T, sans que cela ne modifie la cohérence du programme. Cela garantit que les sous-classes peuvent être utilisées de manière interchangeable avec leurs classes de base.
 
+=> assuré par le compilateur
+
 #### Ségrégation des interfaces (Interface segregation principle)
 
 préférer plusieurs interfaces spécifiques pour chaque client plutôt qu'une seule interface générale. Cela évite aux classes de dépendre de méthodes dont elles n'ont pas besoin, réduisant ainsi les couplages inutiles.
+
+=> calcul ratio nombre de fonctions utilisées / nombre de fonctions proposées par l'interface pour chaque dépendance et comparaison du ratio avec un seuil critique
 
 #### Inversion des dépendances (Dependency inversion principle)
 
